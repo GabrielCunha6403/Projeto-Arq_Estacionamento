@@ -1,0 +1,5 @@
+O sistema de estacionamento tem como funções Cadastrar um cliente (create), Ver dados de um cliente (read), Ver dados de todos os clientes (read), Mudar nome de um cliente (update), Deletar cliente (delete), Suporte (sistema usando Chain of Responsability).
+Os métodos e atributos foram declarados nas classes responsáveis pelas ações utilizando o padrão Grasp Extreme.
+No sistema foi aplicado o padrão GoF Facade para a organização e armazenamento dos clientes cadastrados (o armazenamento dos clientes na classe BancoDeDados utiliza a estrutura Fila, logo, os métodos CRUD são próprios para isso).
+Para cadastrar um cliente é necessário que o mesmo possua um veículo e a vaga em que estacionou. Visto que será necessário algumas instâncias foi utilizado o padrão Builder para a construção do objeto Cliente.
+O sistema possui uma opção para chamar o Suporte, nele podemos receber resposta do Gerente, do Segurança ou da Polícia dependendo do código inserido na hora de chamar o Suporte (Chain of Responsability).
